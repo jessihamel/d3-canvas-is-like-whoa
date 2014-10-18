@@ -8,7 +8,7 @@
       margin: 0px;
     }
     #myCanvas {
-      background-color: #000000;
+      background-color: #ffffff;
     }
   </style>
 </head>
@@ -31,7 +31,7 @@ function draw() {
 
   var X = d3.scale.linear()
     .domain([0,canvas.width])
-    .range([20,100])
+    .range([20,120])
 
   var Y = d3.scale.linear()
     .domain([canvas.height, 0])
@@ -51,7 +51,7 @@ function draw() {
       circle({
         'x':x,
         'y':y,
-        'r':8
+        'r':7
       })
     })
   });
